@@ -1,4 +1,5 @@
 USE codeup_test_db;
+TRUNCATE albums;
 INSERT INTO albums (artist, name, release_date, sales, genre) VALUES
 	('Nirvana', 'Nevermind', '1991', '16.7', 'Grunge,  Alternative Rock'),
 	('AC/DC', 'Back In Black', '1980', '25.9', 'Hard Rock'),

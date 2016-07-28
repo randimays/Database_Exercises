@@ -1,0 +1,4 @@
+SELECT COUNT(gender), gender FROM employees WHERE first_name IN ('Irena', 'Vidya', 'Maya') GROUP BY gender;
+SELECT emp_no, CONCAT(first_name, " ", last_name) AS name, birth_date, gender, hire_date FROM employees WHERE (last_name LIKE "E%" AND last_name LIKE "%e") ORDER BY emp_no DESC;
+SELECT emp_no, CONCAT(first_name, " ", last_name) AS name, birth_date, gender, hire_date, DATEDIFF(CURDATE(), hire_date) AS tenure FROM employees WHERE hire_date LIKE '199%' AND birth_date LIKE '%-12-25' ORDER BY birth_date ASC, hire_date DESC;
+SELECT COUNT(last_name) AS count, last_name FROM employees WHERE (last_name LIKE '%q%') AND  (last_name NOT LIKE '%qu%') GROUP BY last_name ORDER BY last_name ASC;

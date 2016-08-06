@@ -1,3 +1,5 @@
+-- Create a table "albums" for your test database that will store top albums from a Wikipedia article.
+
 USE codeup_test_db;
 DROP TABLE IF EXISTS albums;
 CREATE TABLE albums (

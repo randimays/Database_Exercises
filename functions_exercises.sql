@@ -1,3 +1,5 @@
+-- Find the query for 'Irena', 'Vidya', and 'Maya'. Use count(*) to find the total number of employees for each gender with those names. Update your queries for employees with 'E' in their last name. Use concat() to combine their first and last name together as a single column. For your query of employees born on Christmas and hired in the 90s, use datediff() to find how many days they have been working at the company. Add a GROUP BY to your 'q' but not 'qu' query to find distinct combinations of first and last names. Add a count and order by to make it easier to find employees whose unusual name is shared with others.
+
 SELECT COUNT(gender), gender FROM employees WHERE first_name IN ('Irena', 'Vidya', 'Maya') GROUP BY gender;
 SELECT emp_no, CONCAT(first_name, " ", last_name) AS name, birth_date, gender, hire_date FROM employees WHERE (last_name LIKE "E%" AND last_name LIKE "%e") ORDER BY emp_no DESC;
 SELECT emp_no, CONCAT(first_name, " ", last_name) AS name, birth_date, gender, hire_date, DATEDIFF(CURDATE(), hire_date) AS tenure FROM employees WHERE hire_date LIKE '199%' AND birth_date LIKE '%-12-25' ORDER BY birth_date ASC, hire_date DESC;

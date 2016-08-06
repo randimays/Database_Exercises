@@ -1,3 +1,5 @@
+-- Use INSERT to add records for all albums that claim over 30 million sales from a Wikipedia list. First write your queries as separate INSERT statements, and then refactor to use a single INSERT statement for all records.
+
 USE codeup_test_db;
 TRUNCATE albums;
 INSERT INTO albums (artist, name, release_date, sales, genre) VALUES

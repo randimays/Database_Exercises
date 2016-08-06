@@ -1,3 +1,5 @@
+-- Craft queries to return results for the comments below:
+
 SELECT * FROM employees;
 
 -- Employees with the same hire date as employee 101010

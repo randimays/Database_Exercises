@@ -1,3 +1,5 @@
+-- Write SELECT statements to find information in your albums table. Use captions to describe what you're finding. Add an UPDATE statement to 1) make all albums 10 times more popular 2) move all albums before 1980 back to 1901 3) change "Michael Jackson" to "Peter Jackson". Add SELECT statements after each UPDATE so you can see if it works.
+
 USE codeup_test_db;
 SELECT 'i. All albums' AS caption, artist, name, sales FROM albums;
 UPDATE albums SET sales = (sales * 10);

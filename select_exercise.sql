@@ -1,3 +1,5 @@
+-- Write SELECT queries to find information in your albums table. Use captions to describe what you're finding each time.
+
 USE codeup_test_db;
 SELECT 'Pink Floyd Albums' AS caption, name FROM albums WHERE artist = "Pink Floyd";
 SELECT 'Release year of SPLHCB album' AS caption, release_date FROM albums WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
